@@ -1,0 +1,2 @@
+# GaMaWT
+Proiect Web Technologies
