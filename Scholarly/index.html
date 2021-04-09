@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>GaMa - Overview</title>
+    <link rel="stylesheet" href="css/scholarly.min.css">
+    <script src="js/scholarly.min.js"></script>
+  </head>
+  <body prefix="schema: http://schema.org">
+    <header>
+      <div class="banner">
+        <img src="scholarly-html.svg" width="227" height="50" alt="Scholarly HTML logo">
+        <div class="status">Community Draft</div>
+      </div>
+      <h1>GaMa</h1>
+    </header>
+    <!--
+      XXX
+      - check refs
+      - the math example has too much maths
+      - bring back some of the old style
+      - make semantics, validation, processing sub-sections of each structural element
+      - have a section before that for general constructs
+        - explain why use RDFa
+        - explain our patterns: RDFa, roles
+      - figure captions need to get set throughout
+      - dedication? see doc-dedication
+      - syntactic constraints (prefix)
+      - needs more sthenurines
+      - examples of everything
+      - some notes on using Semantic CSS
+      - needs more RDFa in the spec itself
+    -->
+    <div role="contentinfo">
+      <dl>
+        <dt>Authors</dt>
+        <dd>
+          Macrescu Cosmin-Ionut
+		  &amp;
+		  Prodan Nicolae-Roger
+        </dd>
+        <dd>
+          <a href="https://github.com/w3c/scholarly-html/issues">Issues and PRs welcome!</a>
+        </dd>
+        <dt>Discussion Group</dt>
+        <dd>
+          The <a href="https://www.w3.org/community/scholarlyhtml/">Scholarly HTML Community
+          Group</a> at <a href="https://w3.org/">W3C</a>
+          (<a href="https://lists.w3.org/Archives/Public/public-scholarlyhtml/">email archives</a>)
+        </dd>
+        <dt>License</dt>
+        <dd>
+          <a href="http://creativecommons.org/licenses/by/4.0/">CC-BY</a>
+        </dd>
+      </dl>
+    </div>
+    <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+      <h2>Abstract</h2>
+      <p>
+        GaMa is a website that is desired for people all around the glob that wants to play different types of video games, easy and fast without
+		any sophisticated steps and last but not least, the registered clients will be able to register in tournaments for specific games.
+      </p>
+    </section>
+    <section id="introduction" role="doc-introduction">
+      <!-- review? -->
+      <h2>Introduction</h2>
+      <p>
+		As we all know, these days, the video games are gainning more and more popularity. Back in the day, people had to go in the shops
+          in order to buy the video game that they wanted. That means they had to wait for the game to be in the shop, to see if that certain game is in stock
+          and so on.
+		That's why the GaMa website is useful, by using it people can buy their game instantly, receiving a virtual copy of it, without waiting.
+      </p>
+      <p>
+        The purpose of this website is to:
+      </p>
+      <ul>
+        <li>Make it easy to play diffrent games with people all around the glob by joining tourneys.</li>
+        <li>Easy to choose.</li>
+        <li>Easy to use</li>
+	<li>See all of your tournaments in one place. </li>
+      </ul>
+    </section>
+    <section id="structure">
+      <!-- review? -->
+      <h2>Overview</h2>
+      <section id="Technologies">
+        <!-- review? -->
+        <h3>The <code>Technologies</code> used</h3>
+        <p>
+          The entire Web Application is powered by <b><code>PHP</code></b>.
+        </p>
+        <p>
+          <b><code>MySQL</code></b> will be used for the data storage.
+        </p>
+      </section>
+      <section id="Architecture">
+        <!-- review? -->
+        <h3>The <code>Architecture</code></h3>
+        <p>
+          Procedural architecture we will see if we will change it
+        </p>
+      </section>
+      <section id="Routes & End-points">
+        <h3>Overview of Routes and End-points</h3>
+        <p>
+          GaMa uses a series of <code>routes</code> and <code>end-points</code> to deliver content
+          to users as follows:
+        </p>
+        <ul>
+          <li>
+            /login
+          </li>
+          <li>
+            /register
+          </li>
+        </ul>
+			<ul>
+			Tournament list
+				<ul>
+          <li>/joinTourney</li>
+          <li>/exportCSV</li>
+				</ul>
+			</li>
+			<li>/logout</li>
+      </ul>
+      </section>
+
+      </section>
+      <section id="hunk">
+        <!-- review? -->
+        <h3>Diagrams</h3>
+        <p>
+          Below are a few diagrams to illustrate the use cases of the Web Application.
+        </p>
+
+        <section id="useCase">
+          <h3>Use Case Diagram</h3>
+          <a href="img/use_case_diagramGaMa.png"><img style="width: 100%;" src="img/use_case_diagramGaMa.png" alt="useCase diagram"/></a>
+        </section>
+
+        <section id="UMLdiagram">
+          <h3>UML Diagram</h3>
+          <a href="img/UML_GaMa.png"><img style="width: 120%;" src="img/UML_GaMa.png" alt="UML diagram"/></a>
+        </section>
+      </section>
+
+      <section id="whoDidWhat">
+        <h3>What we did:</h3>
+    <li><b>Macrescu Cosmin-Ionut</b> did the register part, the system for users to be able to join tourneys, a ranked system, the commands(move player, remove player, change points) for the admin's administration page and last but not least the statistics interface.</li>
+    <li><b>Prodan Nicolae-Roger</b> did the login and logout parts, the tourneys, the export to CSV of tourneys/stats function.</li>
+      </section>
+
+        <section id="conclusion">
+          <h3>Conclusion</h3>
+		<p>This website will be such a great "tool" for the people that like playing games online/offline and the competition.
+        </section>
+  </body>
+</html>
