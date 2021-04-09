@@ -1,3 +1,34 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@macree 
+macree
+/
+WTGaMa
+Private
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+Settings
+WTGaMa/gitGaMa_FINAL/GaMaCSS.css
+@macree
+macree Varianta finala cu schimbari de QoL
+Latest commit f4aa8af on Jun 10, 2020
+ History
+ 1 contributor
+312 lines (265 sloc)  5.57 KB
+  
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,12 +49,17 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 } /*resetarea defaultului */
+
 /* De aici incepe CSS-ul propriu */
+
 .container{
     width: 90%;
     margin: 0 auto;
 }
+
+
 /* Top-bar */
+
 .topbar{
     display: inline-block;
     width: 100%;
@@ -34,9 +70,11 @@ time, mark, audio, video {
     font-weight: 600;
     position: relative;
 }
+
 .topleft{
     float: left;
 }
+
 .topleft ul{
     color: #002812;
 }
@@ -45,17 +83,21 @@ time, mark, audio, video {
     text-align: center;
     margin: 0 25px;
 }
+
 .topright{
     float: right;
 }
+
 .topbar ul{
     line-height: 30px;
 }
+
 .topbar ul li{
     list-style-type:  none;
     display: inline-block;
     position: relative;
 }
+
 .topbar ul li a{
     text-decoration: none;
     display: inline-block;
@@ -65,18 +107,21 @@ time, mark, audio, video {
     text-align: center;
     -webkit-transation: 300ms;
 }
+
 .topbar ul li a:hover{
     color: #556B2F /*rgba(110, 25, 25, 0.384)*/;
 }
+
 /* Header-ul */
 .header{
     display: inline-block;
     width: 100%;
     float: left;
-    padding: 15px 0;
+    padding: 18px 0;
     border-bottom: 1px solid #00000010;
     background-color: #002812; /*dark green*/
 }
+
 .header .logo{
     float: left;
     width: 20%;
@@ -85,23 +130,70 @@ time, mark, audio, video {
 .header .headerright{
     float: right;
 }
+
 .header .headerright ul li{
     display: inline-block;
     padding: 10px 0;
 }
+
 .header .headerright ul li a{
     text-decoration: none;
     margin-left: 15px;
     color: rgba(130,201,30);
-		font-size: 20px;
+	font-size: 20px;
 }
 
 .header .headerright ul li .signBtn{
-    padding: 20px 20px;
+    padding: 20px 1px;
     border-radius: 100px;
     background-color: rgba(130,201,30);
     color: #002812;
     font-weight: 600;
+}
+
+.header .headerright ul li .registerBtn{
+    padding: 20px 3px;
+    border-radius: 100px;
+    background-color: rgba(130,201,30);
+    color: #002812;
+    font-weight: 600;
+}
+
+/*Butoanele pt pagina cand userul este logat indexAfterLogin.php*/
+
+.header .headerright ul li .userBtn{
+    padding: 20px 0px;
+    border-radius: 100px;
+    background-color: rgba(130,201,30);
+    color: #002812;
+    font-weight: 600;
+}
+
+.header .headerright ul li .myTournamentsBtn{
+    padding: 20px 0px;
+    border-radius: 100px;
+    background-color: rgba(130,201,30);
+    color: #002812;
+    font-weight: 600;
+}
+
+.header .headerright ul li .logoutBtn{
+    padding: 20px 0px;
+    border-radius: 100px;
+    background-color: rgba(130,201,30);
+    color: #002812;
+    font-weight: 600;
+}
+
+.buttonLogout{
+  padding: 22px 10px;
+  border-radius: 100px;
+  margin-left: 15px;
+  background-color: rgba(130,201,30);
+  font-weight: 600;
+  font-size: 19px;
+  color: #002812;
+  border-style: none;
 }
 
 /*Game Genres */
@@ -131,9 +223,9 @@ time, mark, audio, video {
 }
 
 .gameGenres ul li{
-	display: inline-inline-block;
-	padding-left: 3%;
-	padding-right: 3%;
+	display: inline-block;
+	padding-left: 5.3%;
+	/*padding-right: 3%;*/
 	text-align: center;
 	color: #002812;
 	font-size: 40px;
@@ -148,6 +240,7 @@ time, mark, audio, video {
     float: left;
     padding: 25px 0;
 }
+
 .honorableMentions h3{
     font-size: 28px;
     color: #333;
@@ -158,6 +251,7 @@ time, mark, audio, video {
     margin-bottom: 20px;
     text-align: center;
 }
+
 .honorableMentions ul{
 	position: relative;
 	width: 100%;
@@ -165,21 +259,15 @@ time, mark, audio, video {
 }
 
 .honorableMentions ul li{
-	display: inline-inline-block;
+	display: inline-block;
 	padding-left: 6%;
-	padding-right: 5%;
+    padding-right: 5%;
+    margin-bottom: 10px;
 }
-
-/* Am incercat ca atunci cand se micsoreaza rez ultima imagine sa nu se duca in jos
-#RedAlert2imgLIHonorable{
-	display: inline;
-	padding-left: 6%;
-	padding-right: 0.01%;
-}*/
 
 .honorableMentions ul li img{
 	width: 220px;
-	height: 300px;
+    height: 300px;
 }
 
 /* Zona sponsorilor */
@@ -210,8 +298,7 @@ time, mark, audio, video {
 
 .partnerArea ul li{
 	display: inline-block;
-	padding-left: 8.25%;
-	padding-right: 5.5%;
+	padding-left: 10.40%;
 }
 
 .partnerArea ul li img{
@@ -228,19 +315,23 @@ time, mark, audio, video {
     padding: 25px 0;
     background-color: #002812;
 }
+
 .footer .col-3{
     width: 24%;
     float: left;
 }
+
 .footer p{
     margin-bottom: 10px;
     font-size: 14px;
     color: rgba(130,201,30);
     line-height: 18px;
 }
+
 .footer p strong{
     font-weight: 700;
 }
+
 .copyright{
     display: inline-block;
     width: 100%;
