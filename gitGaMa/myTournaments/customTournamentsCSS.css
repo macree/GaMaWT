@@ -1,0 +1,220 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} /*resetarea defaultului */
+
+/* De aici incepe CSS-ul propriu */
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* customTGdiv */
+
+.customTGdiv{
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+.customTGdiv h3{
+    font-size: 28px;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d2d2d2;
+    font-weight: 600;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.customTGdiv ul{
+    position: relative;
+    display: block;
+	width: 100%;
+}
+
+.customTGdiv ul li{
+    padding-left: 6%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    margin-left: 38%;
+    margin-right: 38%;
+    font-size:70px;
+    font-weight: 600;
+    text-align: center;
+    list-style-type: "🏆";
+}
+.customTGdiv ul li a{
+    text-decoration: none;
+    display: inline-block;
+    color: #002812;
+    padding: 0 5px;
+    width: 100%;
+    text-align: center;
+    -webkit-transation: 300ms;
+}
+
+.customTGdiv ul li img{
+	width: 220px;
+    height: 300px;
+}
+
+.customTGdiv ul li a:hover{
+    color: #556B2F /*rgba(110, 25, 25, 0.384)*/;
+}
+
+/* Top-bar */
+
+.topbar{
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    float: left;
+    background-color: rgba(130,201,30); /*light-green*/
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+}
+
+.topleft{
+    float: left;
+}
+
+.topleft ul{
+    color: #002812;
+}
+.topcenter{
+    float: left;
+    text-align: center;
+    margin: 0 25px;
+}
+
+.topright{
+    float: right;
+}
+
+.topbar ul{
+    line-height: 30px;
+}
+
+.topbar ul li{
+    list-style-type:  none;
+    display: inline-block;
+    position: relative;
+}
+
+.topbar ul li a{
+    text-decoration: none;
+    display: inline-block;
+    color: #002812;
+    padding: 0 5px;
+    width: 100%;
+    text-align: center;
+    -webkit-transation: 300ms;
+}
+
+.topbar ul li a:hover{
+    color: #556B2F /*rgba(110, 25, 25, 0.384)*/;
+}
+
+/* Header-ul */
+.header{
+    display: inline-block;
+    width: 100%;
+    float: left;
+    padding: 18px 0;
+    border-bottom: 1px solid #00000010;
+    background-color: #002812; /*dark green*/
+}
+
+.header .logo{
+    float: left;
+    width: 20%;
+}
+
+.header .headerright{
+    float: right;
+}
+
+.header .headerright ul li{
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.header .headerright ul li a{
+    text-decoration: none;
+    margin-left: 15px;
+    color: rgba(130,201,30);
+	font-size: 20px;
+}
+
+.header .headerright ul li .signBtn{
+    padding: 20px 1px;
+    border-radius: 100px;
+    background-color: rgba(130,201,30);
+    color: #002812;
+    font-weight: 600;
+}
+
+.header .headerright ul li .registerBtn{
+    padding: 20px 3px;
+    border-radius: 100px;
+    background-color: rgba(130,201,30);
+    color: #002812;
+    font-weight: 600;
+}
+
+/*Butoanele pt pagina cand userul este logat indexAfterLogin.php*/
+
+.header .headerright ul li .userBtn{
+    padding: 20px 0px;
+    border-radius: 100px;
+    background-color: rgba(130,201,30);
+    color: #002812;
+    font-weight: 600;
+}
+
+.header .headerright ul li .myTournamentsBtn{
+    padding: 20px 0px;
+    border-radius: 100px;
+    background-color: rgba(130,201,30);
+    color: #002812;
+    font-weight: 600;
+}
+
+.header .headerright ul li .logoutBtn{
+    padding: 20px 0px;
+    border-radius: 100px;
+    background-color: rgba(130,201,30);
+    color: #002812;
+    font-weight: 600;
+}
+
+.buttonLogout{
+  padding: 22px 10px;
+  border-radius: 100px;
+  margin-left: 15px;
+  background-color: rgba(130,201,30);
+  font-weight: 600;
+  font-size: 19px;
+  color: #002812;
+  border-style: none;
+}

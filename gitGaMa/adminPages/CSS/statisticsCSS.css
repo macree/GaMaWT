@@ -1,0 +1,229 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} /*resetarea defaultului */
+
+/* De aici incepe CSS-ul propriu */
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.buttonsDiv {
+    width: 10%;
+    Display: flex;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.buttonsDiv ul {
+    position: relative;
+    width: 10%;
+}
+
+.buttonsDiv ul li{
+    display: inline-block;
+    padding-inline-end: 5px;
+}
+
+
+/* Set a style for all buttons */
+button {
+    background-color: #002812;
+    color: white;
+    padding: 14px 20px;
+    /*margin: 2px 150px;*/
+    margin-left: 2px;
+    margin-right: 500px;
+    margin-bottom: 2px;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+    position: relative;
+    display: right;
+  }
+  
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+  }
+
+
+.usersStatistics {
+  width: 45%;
+  float:left;
+  Display: flex;
+  margin-left:1%;
+  padding-top: 40px;
+  padding-bottom: 198.5px;
+  padding-left: 100px;
+  padding-right: 30px;
+}
+
+.usersStatistics ul {
+    position: relative;
+}
+
+.usersStatistics ul li{
+    display: inline-block;
+    padding-right: 5%;
+}
+
+
+.gamesStatistics {
+    width: 40%;
+    float: left;
+    Display: flex;
+    padding-top: 40px;
+    padding-bottom: 198.5px;
+    padding-left: 100px;
+    padding-right: 30px;
+  }
+  
+  .gamesStatistics ul {
+      position: relative;
+  }
+  
+  .gamesStatistics ul li{
+      display: inline-block;
+      padding-right: 5%;
+  }
+
+
+  .buttonsDiv {
+    width: 90%;
+    Display: flex;
+    padding-top: 40px;
+    padding-bottom: 166.5px;
+    padding-left: 100px;
+    padding-right: 55px;
+  }
+  
+  .buttonsDiv button{
+      margin-left: 45%;
+      margin-right: 45%;
+      padding-right: 100px;
+      padding-left: 100px;
+  }
+
+
+  #statisticsDefaultAtribute{
+    font-size:35px; 
+    font-weight:600;
+  }
+
+  #digitalGameAtribute{
+    font-size:40px;
+    font-weight:600;
+    color:rgb(59, 92, 120);
+  }
+
+  #boardGameAtribute{
+    font-size:40px;
+    font-weight:600;
+    color:rgb(100, 155, 137);
+  }
+
+/* Top-bar */
+
+.topbar{
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    float: left;
+    background-color: rgba(130,201,30); /*light-green*/
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+}
+
+/* Header-ul */
+.header{
+    display: inline-block;
+    width: 100%;
+    float: left;
+    padding: 28px 0;
+    border-bottom: 1px solid #00000010;
+    background-color: #002812; /*dark green*/
+}
+
+.header .logo{
+    float: left;
+    width: 20%;
+}
+
+.header .headerright{
+    float: right;
+}
+
+.header .headerright ul li{
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.header .headerright ul li a{
+    text-decoration: none;
+    margin-left: 15px;
+    color: rgba(130,201,30);
+		font-size: 20px;
+}
+
+.header .headerright ul li .signBtn{
+    padding: 20px 20px;
+    border-radius: 100px;
+    background-color: rgba(130,201,30);
+    color: #002812;
+    font-weight: 600;
+}
+/* Footer */
+
+.footer{
+    width: 100%;
+    display: inline-block;
+    float: left;
+    padding: 25px 0;
+    background-color: #002812;
+}
+
+.footer .col-3{
+    width: 24%;
+    float: left;
+}
+
+.footer p{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgba(130,201,30);
+    line-height: 18px;
+}
+
+.footer p strong{
+    font-weight: 700;
+}
+
+.copyright{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    float: left;
+    background-color: rgba(130,201,30);
+    padding: 10px 0;
+    color: #002812;
+}

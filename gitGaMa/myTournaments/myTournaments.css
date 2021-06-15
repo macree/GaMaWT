@@ -1,0 +1,245 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} /*resetarea defaultului */
+
+/* De aici incepe CSS-ul propriu */
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* Top-bar */
+
+.topbar{
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    float: left;
+    background-color: rgba(130,201,30); /*light-green*/
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+}
+
+.topleft{
+    float: left;
+}
+
+.topleft ul{
+    color: #002812;
+}
+.topcenter{
+    float: left;
+    text-align: center;
+    margin: 0 25px;
+}
+
+.topright{
+    float: right;
+}
+
+.topbar ul{
+    line-height: 30px;
+}
+
+.topbar ul li{
+    list-style-type:  none;
+    display: inline-block;
+    position: relative;
+}
+
+.topbar ul li a{
+    text-decoration: none;
+    display: inline-block;
+    color: #002812;
+    padding: 0 5px;
+    width: 100%;
+    text-align: center;
+    -webkit-transation: 300ms;
+}
+
+.topbar ul li a:hover{
+    color: #556B2F /*rgba(110, 25, 25, 0.384)*/;
+}
+
+/* Header-ul */
+.header{
+    display: inline-block;
+    width: 100%;
+    float: left;
+    padding: 18px 0;
+    border-bottom: 1px solid #00000010;
+    background-color: #002812; /*dark green*/
+}
+
+.header .logo{
+    float: left;
+    width: 20%;
+}
+
+.header .headerright{
+    float: right;
+}
+
+.header .headerright ul li{
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.header .headerright ul li a{
+    text-decoration: none;
+    margin-left: 15px;
+    color: rgba(130,201,30);
+	font-size: 20px;
+}
+
+.header .headerright ul li .signBtn{
+    padding: 20px 1px;
+    border-radius: 100px;
+    background-color: rgba(130,201,30);
+    color: #002812;
+    font-weight: 600;
+}
+
+.header .headerright ul li .registerBtn{
+    padding: 20px 3px;
+    border-radius: 100px;
+    background-color: rgba(130,201,30);
+    color: #002812;
+    font-weight: 600;
+}
+
+/*Butoanele pt pagina cand userul este logat indexAfterLogin.php*/
+
+.header .headerright ul li .userBtn{
+    padding: 20px 0px;
+    border-radius: 100px;
+    background-color: rgba(130,201,30);
+    color: #002812;
+    font-weight: 600;
+}
+
+.header .headerright ul li .myTournamentsBtn{
+    padding: 20px 0px;
+    border-radius: 100px;
+    background-color: rgba(130,201,30);
+    color: #002812;
+    font-weight: 600;
+}
+
+.header .headerright ul li .logoutBtn{
+    padding: 20px 0px;
+    border-radius: 100px;
+    background-color: rgba(130,201,30);
+    color: #002812;
+    font-weight: 600;
+}
+
+.buttonLogout{
+  padding: 22px 10px;
+  border-radius: 100px;
+  margin-left: 15px;
+  background-color: rgba(130,201,30);
+  font-weight: 600;
+  font-size: 19px;
+  color: #002812;
+  border-style: none;
+}
+
+/*Game Genres */
+
+.myTournaments{
+    width: 100%;
+    display: inline-block;
+    float: left;
+    width: 86%;
+    padding: 132px;
+    padding-top: 20.5px;
+}
+
+.myTournaments h3{
+    font-size: 28px;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d2d2d2;
+    font-weight: 600;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.myTournaments ul{
+	position: relative;
+	width: 100%;
+	top: 117%;
+}
+
+.myTournaments ul li{
+	display: inline-block;
+	padding-left: 5.3%;
+	padding-right: 3%;
+	text-align: center;
+	color: #002812;
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.myTournaments ul li img{
+	width: 220px;
+	height: 300px;
+}
+
+/* Footer */
+
+.footer{
+    width: 100%;
+    display: inline-block;
+    float: left;
+    padding: 25px 0;
+    background-color: #002812;
+}
+
+.footer .col-3{
+    width: 24%;
+    float: left;
+}
+
+.footer p{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgba(130,201,30);
+    line-height: 18px;
+}
+
+.footer p strong{
+    font-weight: 700;
+}
+
+.copyright{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    float: left;
+    background-color: rgba(130,201,30);
+    padding: 10px 0;
+    color: #002812;
+}
