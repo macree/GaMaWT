@@ -32,24 +32,25 @@ html {overflow-y: scroll;}
     margin: 0 auto;
 }
 
-.loginContainer{
-  width: 77.6%;
-  float: left;
-  padding-top: 223.5px;
-  padding-bottom: 16.03%;
-  padding-left: 9.7%;
-  padding-right: 9.7%;
+.createTourney {
+    width: 77.6%;
+    float: left;
+    padding-top: 5%;
+    /*padding-bottom: 16.03%;*/
+    padding-left: 9.7%;
+    /*padding-right: 9.7%;*/
+    display: inline-block;
 }
 
 label {
   margin-left: 35%;
-  margin-right: 35%;
+  /*margin-right: 35%;*/
   color: #002812;
   font-size: 28px;
   font-weight: 600;
 }
 
-.loginContainer h3{
+.createTourney h3 {
     font-size: 20px;
     text-transform: uppercase;
     border-bottom: 1px solid #d2d2d2;
@@ -59,6 +60,9 @@ label {
     text-align: center;
 }
 
+.createTourney textarea{
+    margin-left: 35%;
+}
 /* Full-width inputs */
 
 /*am pus input[type=text] si respectiv input[type=password] pt ca selecteaza strict doar text si password fields*/
@@ -93,15 +97,28 @@ select {
     border-width: 1mm;
     border-color: grey;
 }
-
-#createTGbutton{
+#requirements{
+    display: inline;
+}
+#createTGbutton {
     margin-top: 92px;
 }
 
 #removePbutton{
     margin-top:75px;
 }
+#modifyGameButton{
+    margin-top: 5px;
+}
 
+#deleteGame-downList{
+    margin-bottom: 5px;
+}
+
+#modificationsHeader
+{
+    color: red;
+}
 /* Add a hover effect for buttons */
 button:hover {
   opacity: 0.8;

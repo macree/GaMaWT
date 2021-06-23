@@ -72,7 +72,7 @@ button:hover {
   Display: flex;
   margin-left:1%;
   padding-top: 40px;
-  padding-bottom: 198.5px;
+  /* padding-bottom: 198.5px; */
   padding-left: 100px;
   padding-right: 30px;
 }
@@ -92,7 +92,7 @@ button:hover {
     float: left;
     Display: flex;
     padding-top: 40px;
-    padding-bottom: 198.5px;
+    /* padding-bottom: 198.5px; */
     padding-left: 100px;
     padding-right: 30px;
   }
@@ -226,4 +226,35 @@ button:hover {
     background-color: rgba(130,201,30);
     padding: 10px 0;
     color: #002812;
+}
+@media only screen and (max-width: 950px) {
+    .usersStatistics{
+        width: 100%;
+        float: left;
+        Display: flex;
+        margin-left: 1%;
+        padding-top: 40px;
+        /* padding-bottom: 198.5px; */
+        padding-left: 5px;
+        /* padding-right: 30px; */
+    }
+    .gamesStatistics{
+        width: 100%;
+        float: left;
+        Display: flex;
+        margin-left: 1%;
+        /* padding-top: 40px; */
+        /* padding-bottom: 198.5px; */
+        padding-left: 5px;
+        /* padding-right: 30px; */
+    }
+    .buttonsDiv{
+    /* width: 50%; */
+    Display: flex;
+    /* padding-top: 40px; */
+    /* padding-bottom: 166.5px; */
+    padding-left: 40px;
+    padding-right: 55px;
+    margin-left: 5px;
+    }
 }

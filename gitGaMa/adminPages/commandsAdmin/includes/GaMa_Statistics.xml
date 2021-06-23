@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container>
+  <statistics>
+    <description>Number of users</description>
+    <result>14</result>
+    <description>% of users that are male</description>
+    <result>71.43</result>
+    <description>% of users that are female</description>
+    <result>28.57</result>
+    <description>% of users that have 1-13 years</description>
+    <result>14.29</result>
+    <description>% of users that have 14-70 years</description>
+    <result>71.43</result>
+    <description>% of users that have 71-99 years</description>
+    <result>14.29</result>
+    <description>Number of games</description>
+    <result>21</result>
+    <description>% of digital games</description>
+    <result>61.9</result>
+    <description>% of board games</description>
+    <result>38.1</result>
+  </statistics>
+</container>

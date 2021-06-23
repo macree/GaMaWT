@@ -19,28 +19,35 @@ time, mark, audio, video {
 	vertical-align: baseline;
 } /*resetarea defaultului */
 
-/* De aici incepe CSS-ul propriu */
-
+/* De aici incepe CSS-ul propriu 
+#Content{
+    display: flex;
+}*/
+  
 .container{
     width: 90%;
     margin: 0 auto;
 }
 
 .buttonsDiv {
-    width: 10%;
-    Display: flex;
-    padding-left: 25%;
-    padding-right: 25%;
+    width: 50%;
+    Display: block;
+    margin: 10px auto;
+    /*padding-left: 25%;
+    padding-right: 25%;*/
 }
 
 .buttonsDiv ul {
     position: relative;
     width: 10%;
+    display: flex;
+    /* padding-left: 100px; */
 }
 
 .buttonsDiv ul li{
     display: inline-block;
-    padding-inline-end: 5px;
+    width: 100px;
+    /*padding-inline-end: 5px;*/
 }
 
 
@@ -51,15 +58,16 @@ button {
     padding: 14px 20px;
     /*margin: 2px 150px;*/
     margin-left: 2px;
-    margin-right: 500px;
+    margin-right: 100px;
     margin-bottom: 2px;
     border: none;
     cursor: pointer;
-    width: 15%;
+    /*width: 15%;*/
     position: relative;
-    display: right;
+    /*display: right;*/
   }
-  
+
+
 /* Add a hover effect for buttons */
 button:hover {
     opacity: 0.8;
@@ -67,11 +75,11 @@ button:hover {
 
 
 .gamePlayers {
-  width: 30%;
-  Display: flex;
+  width: 15%;
+  Display: inline-block;
   padding-top: 40px;
-  padding-bottom: 198.5px;
-  padding-left: 100px;
+  /*padding-bottom: 198.5px;*/
+  padding-left: 15%;
   padding-right: 30px;
 }
 
@@ -82,11 +90,12 @@ button:hover {
 .gamePlayers ul li{
     display: inline-block;
     padding-right: 5%;
+    /* width: 100%; */
 }
 
 .gamePlayers ul li ol li{
     display: flex;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     list-style-type: decimal;
 }
 
@@ -95,15 +104,16 @@ button:hover {
     overflow-y:scroll;
     overflow-x:scroll; 
     height:500px; 
-    width:90%;
+    width:105%;
 }
 
 .allUsers {
-    width: 30%;
-    Display: flex;
+    width: 10%;
+    Display: inline-block;
+    padding-top: 40px;
     /*padding-bottom: 169.5px;*/
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 1%;
+    padding-right: 1%;
   }
   
   .allUsers ul {
@@ -117,8 +127,16 @@ button:hover {
   
   .allUsers ul li ol li{
       display: flex;
-      margin-left: 20px;
+      /* margin-left: 20px; */
       list-style-type: decimal;
+  }
+
+  #navPlayersGame{
+      width:135px;
+  }
+
+  #navGameTable{
+      width: 115%;
   }
 
   .allUsers nav ol{
@@ -126,15 +144,16 @@ button:hover {
     overflow-y:scroll; 
     overflow-x:scroll;
     height:500px; 
-    width:90%;
+    width:100%;
 }
 
 .allGames {
-    width: 30%;
-    Display: flex;
+    /*width: 30%;*/
+    Display: inline-block;
     /*padding-bottom: 169.5px;*/
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 40px;
   }
   
   .allGames ul {
@@ -148,7 +167,7 @@ button:hover {
   
   .allGames ul li ol li{
       display: flex;
-      margin-left: 20px;
+      /* margin-left: 20px; */
       list-style-type: decimal;
   }
 
@@ -157,7 +176,7 @@ button:hover {
     overflow-y:scroll;
     overflow-x:scroll;
     height:500px; 
-    width:90%;
+    width:100%;
 }
 
   .bestUser {
@@ -269,3 +288,45 @@ button:hover {
     padding: 10px 0;
     color: #002812;
 }
+#font1,#font2,#font3{
+    font-size:18px; font-weight:600
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .gamePlayers{
+        width:31%;
+    }
+
+    .gamePlayers nav ol{
+        width: 110%;
+    }
+
+    .buttonsDiv {
+        width: 10%;
+        Display: inline-flex;
+        margin: 5px auto;
+        /*padding-left: 25%;
+        padding-right: 25%;*/
+    }
+
+    .buttonsDiv ul {
+        width: 10%;
+        Display: flex;
+        margin: 10px auto;
+        /*padding-left: 25%;
+        padding-right: 25%;*/
+    }
+    #font1{
+        font-size:18px; 
+        font-weight:600;
+    }
+    #font2{
+        font-size:18px; 
+        font-weight:600;
+    }
+    #font3{
+        font-size:18px; 
+        font-weight:600;
+    }
+  }
