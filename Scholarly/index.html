@@ -38,7 +38,7 @@
         <dd>
           Macrescu Cosmin-Ionut
 		  &amp;
-		  Prodan Nicolae-Roger
+		  <s>Prodan Nicolae-Roger</s>
         </dd>
         <dd>
           <a href="https://github.com/w3c/scholarly-html/issues">Issues and PRs welcome!</a>
@@ -59,7 +59,8 @@
       <h2>Abstract</h2>
       <p>
         GaMa is a website that is desired for people all around the glob that wants to play different types of games, easy and fast without
-		any sophisticated steps and last but not least, the registered clients will be able to register in tournaments for specific games.
+		any sophisticated steps and last but not least, the registered clients will be able to register in tournaments for specific games, and see informations
+    about their liked games from a library.
       </p>
     </section>
     <section id="introduction" role="doc-introduction">
@@ -101,28 +102,48 @@
         </p>
       </section>
       <section id="Routes & End-points">
-        <h3>Overview of Routes and End-points</h3>
+        <h3>Below I present each page from the website and what it does</h3>
         <p>
-          GaMa uses a series of <code>routes</code> and <code>end-points</code> to deliver content
-          to users as follows:
+          <b>INDEX page</b> is the page from where the user can log in or register. The user cannot
+          see the games until it loggs in.
         </p>
-        <ul>
-		<li>/index</li>
-          <li>
-            /login
-          </li>
-          <li>
-            /register
-          </li>
-        </ul>
-			<ul>
-			Games list (DIGITAL/BOARD)
-				<ul>
-          <li>/gameTourney</li>
-				</ul>
-			</li>
-			<li>/logout</li>
-      </ul>
+
+        <p>
+          <b>LOGIN page</b> is the page from where the user can log in.
+        </p>
+
+        <p>
+          <b>REGISTER page</b> is the page from where the user can log in.
+        </p>
+
+        <p>
+          <b>INDEX-AFTER-LOGIN page</b> is the page from where the user can see the top 4 popular games for his
+          age, he can get the RSS feed, and has a filter which is used to display games using ceratin criterias.
+          He can see the Board/Digital games by genre, or if it has a tourney.
+        </p>
+
+        <p>
+          <b>GAME-TOURNEY page</b> is the page of a game. Here, the <b>user</b> can see details of the game, he can like the game or dislike it
+          , he can also join a tourney if the game has it and if the tourney is not full. If the game has a tourney, the user will
+          be able to see other people that are joined and their points. Each tourney has 8 slots. He can also export as CSV the
+          details of the game.
+          <b>On this page, the admin has the rights to modify the number of players that are in the tourney and their points. He also has
+            a button called "Battle" which makes the tourney to go at the next step. When wwe have a winner, it will apper a "RESET" button,
+             which will reset the tourney and add a point in the database to the player that has won it.
+          </b>
+        </p>
+        
+        <p>
+          <b>MY-TOURNAMENTS</b> is the page for the users where they can see the games that they like and the ones on which
+          they are registered in the tourney.
+        </p>
+        
+        <p>
+          <b>ADMINISTRATION-PAGE</b> this page can only be accesed by the admin. Here are 3 tables, the ones from the database.
+          There are also 5 buttons: <b>MOVE PLAYE</b> it moves the player from a tourney to another. <b>DELETE USER</b> 
+          deletes the user from the database. <b>ADD GAME</b> adds a game to the website. <b>DELETE GAME</b> deletes a game from
+          the website. <b>MODIFY GAME</b> modifies the details of the game(genre, age limit, type, tourney, description, dimensions).
+        </p>
       </section>
 
       </section>
@@ -145,14 +166,14 @@
       </section>
 
       <section id="whoDidWhat">
-        <h3>What we did/ will do:(Not 100% definitive for back-end)</h3>
-    <li><b>Macrescu Cosmin-Ionut</b> For interface: index.html (the main page), login.html and register.html. Back-end: will do the register part, the system for users to be able to join tourneys, the commands(move player, remove player, change points) for the admin's administration page and the statistics.</li>
-    <li><b>Prodan Nicolae-Roger</b> For interface: gameTourney.html (there is no bracket display at the moment, but it will be in the final implementation), administrationPage.html. Back-end: will do the login and logout parts, the tourneys brackets, the export to CSV of tourneys/stats function.</li>
+        <h3>What we did:</h3>
+    <li><b>Macrescu Cosmin-Ionut</b>I did it all by my self.</li>
+    <li><b><s>Prodan Nicolae-Roger</s></b> <s>For interface: gameTourney.html (there is no bracket display at the moment, but it will be in the final implementation), administrationPage.html. Back-end: will do the login and logout parts, the tourneys brackets, the export to CSV of tourneys/stats function.</s></li>
       </section>
 
         <section id="conclusion">
           <h3>Conclusion</h3>
-		<p>This website will be such a great "tool" for the people that like playing games online/offline and the competition.
+		<p>This website will be such a great "tool" for the people that like playing games online/offline and the competition and to explore a large gama of types of games.
         </section>
   </body>
 </html>
