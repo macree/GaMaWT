@@ -23,9 +23,9 @@ ini_set('display_errors', true);
             $IDuser = $row['idUsers'];
         }
 
-        $getGameID = "SELECT idGame FROM games WHERE tittleGame='$gameName';";
+        $getGameID = "SELECT idGame,TGnature FROM games WHERE tittleGame='$gameName';";
         $resultGetGameID = mysqli_query($conn,$getGameID);
-    
+        $TGnature= $row['TGnature'];
         while($row = $resultGetGameID->fetch_assoc()){
             $IDgame = $row['idGame'];
         }
@@ -33,7 +33,7 @@ ini_set('display_errors', true);
         $insertSQL = "INSERT INTO playersgame (idGuser, idGgame, points) VALUES ($IDuser,$IDgame,$points);";
         $sql = mysqli_query($conn,$insertSQL);
         
-        header("Location: /gitGaMa/gamesCategory/gameTourney.php?succes=joined&username=$username&game=$gameName");
+        header("Location: /gitGaMa/gamesCategory/gameTourney.php?succes=joined&username=$username&game=$gameName&TGnature=$TGnature");
         exit();
     }
 ?>

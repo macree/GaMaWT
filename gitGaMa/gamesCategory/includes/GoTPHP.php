@@ -11,7 +11,9 @@ if (isset($_POST['joinTournament-submit'])){
     $getID = "SELECT idUsers FROM users WHERE usernameUsers='$username';";
     $resultGetID = mysqli_query($conn,$getID);
 
-    while($row = $resultGetID->fetch_assoc()){$ID = $row['idUsers'];
+    while($row = $resultGetID->fetch_assoc())
+    {
+    $ID = $row['idUsers'];
     }
         $ID = $row['idUsers'];
     

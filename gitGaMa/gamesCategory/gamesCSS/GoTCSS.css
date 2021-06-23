@@ -26,33 +26,212 @@ time, mark, audio, video {
     margin: 0 auto;
 }
 
-.gamePlayers {
-  width: 90%;
-  padding-top: 223.5px;
-  padding-bottom: 147.5px;
-  padding-left: 100px;
-  padding-right: 30px;
+#content{
+    /* display: flex; */
 }
 
-.gamePlayers ul li img{
+.gamePlayers1 {
+  width: 20%;
+  display:inline-block;
+  /*padding-top: 10%;
+  padding-bottom: 147.5px;*/
+  padding-left: 9%;
+  /*padding-right: 30px;*/
+}
+
+.gamePlayers2 {
+    width: 20%;
+    height: 400px;
+    display:inline-block;
+    /*padding-top: 10%;
+    padding-bottom: 147.5px;
+    padding-left: 3%;
+    /*padding-right: 30px;*/
+  }
+
+.gamePlayers3{
+    width: 50%;
+    height: 400px;
+    display:inline-block;
+    /*padding-top: 10%;
+    padding-bottom: 147.5px;*/
+    /* padding-left: 3%; */
+    /*padding-right: 30px;*/
+}
+
+.gamePlayers{
+    width: 50%;
+    height: 400px;
+    display:inline-block;
+    /*padding-top: 10%;
+    padding-bottom: 147.5px;*/
+    padding-left: 3%;
+    /*padding-right: 30px;*/
+}
+
+#gamePlayersTforms{
+    width: 20%;
+    /* height: 400px; */
+    display:inline-block;
+    /*padding-top: 10%;
+    padding-bottom: 147.5px;*/
+    padding-left: 3%;
+    /*padding-right: 30px;*/
+}
+.gamePlayers1 ul li img{
 	width: 300px;
     height: 420px;/* sa faca aranjarea din coltul de sus al imaginii*/
 }
 
-.gamePlayers ul {
+.gamePlayers1 ul {
     position: relative;
-    margin-left:25%;
+    /*margin-left:25%;*/
 }
 
-.gamePlayers ul li{
+.gamePlayers2 ul li {
+    padding-top: 5px;
+}
+
+.gamePlayers3 ul li {
+    padding-top: 5px;
+}
+
+#iLikeIt-submit{
+    background-color:green;
+    color: white;
+    padding: 14px 20px;
+    /* margin: 8px 575px;
+    margin-left: 20%;
+    margin-right: 45%;
+    margin-top: 1%;*/
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+#iDislikeIt-submit{
+    background-color:red;
+    color: white;
+    padding: 14px 20px;
+    /* margin: 8px 575px; */
+    /*margin-left: 20%;*/
+    /*margin-right: 45%;*/
+    /*margin-top: 1%;*/
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+#gameImageLI {
+    padding-right: 0%;
+}
+
+#imageUL{
+    width:20%;
+}
+
+#detailsUL{
+    width: 100%;
+    display: grid; /* imi afiseza de sus in joc ca o lista*/
+    height:350px;
+}
+
+#bracketUL{
+    width: 100%;
+    display: grid; /* imi afiseza de sus in joc ca o lista*/
+    height:350px;
+    margin-left: 7%;
+}
+
+#descriptionUL{
+    /*width: 100%;*/
+    /*display: grid; /* imi afiseza de sus in joc ca o lista*/
+    display:flex;
+    height:350px;
+    margin-top:2%;
+}
+#exportButtonGT{
+    background-color:rosybrown;
+    color: white;
+    padding: 14px 20px;
+    /* margin: 8px 575px; */
+    /*margin-left: 20%;*/
+    /*margin-right: 45%;*/
+    /*margin-top: 1%;*/
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+#battleButtonAdmin{
+    background-color:red;
+    color: white;
+    padding: 14px 20px;
+    /* margin: 8px 575px; */
+    /*margin-left: 20%;*/
+    /*margin-right: 45%;*/
+    /*margin-top: 1%;*/
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+#resetButtonAdmin
+{
+    background-color:rgb(152, 196, 50);
+    color: white;
+    padding: 14px 20px;
+    /* margin: 8px 575px; */
+    /*margin-left: 20%;*/
+    /*margin-right: 45%;*/
+    /*margin-top: 1%;*/
+    margin-bottom: 3px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+#joinTournament-submit{
+    background-color: rgb(86, 116, 126);
+    color: white;
+    padding: 14px 20px;
+    margin-top: 1%;
+    /* margin: 8px 575px; */
+    /*margin-left: 20%;*/
+    /*margin-right: 45%;*/
+    /*margin-top: 1%;*/
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+#formExport{
+    margin-top: 10px;
+}
+
+#formTurneyButtons{
+
+}
+
+#formLike{
+
+}
+#formDislike{
+    margin-top: 5px;
+}
+
+#thereAreNoPlayersLI{
+    margin-bottom: 100%;
+}
+.gamePlayers1 ul li{
     display: inline-block;
-    padding-right: 5%;
+    /*padding-right: 5%;*/
     text-align: top;
     vertical-align: text-top; /*sa pot alinia elementele listei la partea de sus a imaginii*/
     
 }
 
-.gamePlayers ol nav{
+.gamePlayers1 ol nav{
     overflow:hidden; 
     overflow-y:scroll;
     overflow-x:scroll; 
@@ -60,35 +239,63 @@ time, mark, audio, video {
     width:90%;
 }
 
-.gamePlayers ul li ol li{
-    display: flex;
-    margin-left: 20px;
+.gamePlayers1 ul li ol li{
+    /*display: flex;
+    margin-left: 20px;*/
     list-style-type: decimal;
 }
 
+#descriptionBOX{
+    height:180px;width:60%;
+}
 
 /* Set a style for all buttons */
-button {
+/*button {
   background-color: #002812;
   color: white;
   padding: 14px 20px;
-  /*margin: 8px 575px;*/
+  /*margin: 8px 575px;* /
   margin-left: 20%;
   margin-right: 45%;
   margin-top: 5%;
   border: none;
   cursor: pointer;
   width: 30%;
-}
+}*/
 
 /* Add a hover effect for buttons */
 button:hover {
   opacity: 0.8;
 }
 
-/* Top-bar */
+/*#iLikeIt-submit {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}*/
 
-.topbar{
+/* #iDislikeIt-submit {
+    background-color: #e63c3c;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+} */
+
+/* Top-bar */
+.topbar {
     display: inline-block;
     width: 100%;
     height: 30px;
@@ -138,12 +345,17 @@ button:hover {
     font-weight: 600;
 }
 
-.copyright{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    float: left;
-    background-color: rgba(130,201,30);
-    padding: 10px 0;
-    color: #002812;
+/*boxul pentru text descriere*/
+/*.scroll-box {
+    height: 400px; //maximum height of the box, feel free to change this!
+    overflow-y: scroll;
+}*/
+
+.scroll-box {
+    background: #f4f4f4;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    /*height: 200px; /* maximum height of the box, feel free to change this!*/
+    padding: 15px;
+    /*width:25%;*/
+    overflow-y: scroll;
 }
