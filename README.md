@@ -1,3 +1,3 @@
 # GaMaWT
 Proiect Web Technologies - 
-Trebuie sa puneti toate fisierele intr-un altul denumit "gitGaMa"
+Sa se conceapa o aplicatie Web care inventariaza (colectii de) jocuri clasice (fizice) si digitale (electronice), inclusiv realizeaza managementul (meta-)datelor aferente: categorie, dimensiuni, imagini, destinatari – copii mici, (pre)scolari, adolescenti, adulti, persoane cu nevoi speciale –, reguli, restrictii (e.g., necesita platforma P, se bazeaza exclusiv pe interactiune vocala) si altele. Sistemul va oferi suport pentru activitati de organizare de campionate vizand diverse jocuri, plus administrarea utilizatorilor. Se vor genera statistici diverse ce pot fi exportate in formate deschise – minimal, CSV, DocBook si PDF. Se va realiza, de asemenea, un clasament al celor mai populare jocuri si grupuri de jucatori, disponibil si ca flux de date RSS. 
