@@ -167,16 +167,14 @@ time, mark, audio, video {
 
 /*Game Genres */
 
-.myTournaments{
+.gameGenres{
     width: 100%;
     display: inline-block;
     float: left;
-    width: 86%;
-    padding: 132px;
-    padding-top: 20.5px;
+    padding: 25px 0;
 }
 
-.myTournaments h3{
+.gameGenres h3{
     font-size: 28px;
     color: #333;
     text-transform: uppercase;
@@ -187,25 +185,94 @@ time, mark, audio, video {
     text-align: center;
 }
 
-.myTournaments ul{
+.gameGenres ul{
 	position: relative;
 	width: 100%;
 	top: 117%;
 }
 
-.myTournaments ul li{
+.gameGenres ul li{
 	display: inline-block;
 	padding-left: 5.3%;
-	padding-right: 3%;
+	/*padding-right: 3%;*/
 	text-align: center;
 	color: #002812;
 	font-size: 40px;
 	font-weight: 600;
 }
 
-.myTournaments ul li img{
+/*Honorable Mentions */
+
+.honorableMentions{
+    width: 100%;
+    display: inline-block;
+    float: left;
+    padding: 25px 0;
+}
+
+.honorableMentions h3{
+    font-size: 28px;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d2d2d2;
+    font-weight: 600;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.honorableMentions ul{
+	position: relative;
+	width: 100%;
+	top: 117%;
+}
+
+.honorableMentions ul li{
+	display: inline-block;
+	padding-left: 6%;
+    padding-right: 5%;
+    margin-bottom: 10px;
+}
+
+.honorableMentions ul li img{
 	width: 220px;
-	height: 300px;
+    height: 300px;
+}
+
+/* Zona sponsorilor */
+
+.partnerArea{
+    width: 100%;
+    float: left;
+    display: inline-block;
+    padding: 25px 0;
+}
+
+.partnerArea h3{
+    font-size: 28px;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d2d2d2;
+    font-weight: 600;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.partnerArea ul{
+	position: relative;
+	width: 100%;
+	top: 117%;
+}
+
+.partnerArea ul li{
+	display: inline-block;
+	padding-left: 10.40%;
+}
+
+.partnerArea ul li img{
+	width: 320px;
+	height: 320px;
 }
 
 /* Footer */
