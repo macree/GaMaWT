@@ -1,125 +1,179 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <title>GaMa</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="/gitGaMa/images/download.png" />
-        <link rel="stylesheet" type="text/css" href="/gitGaMa/GaMaCSS.css">
-        <!--Am folosit acest site pentru a folosi anumite simboluri, fonturi.-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    </head>
-    <body >
-
-        <!-- Bara de meniu, de aici incepe -->
-        <div class="topbar">
-            <div class="container" >
-
-                <!-- Partea din stanga-->
-                <div class="topleft">
-                    <ul>
-                        <li> <i class="fas fa-globe-europe"></i> EN </li>
-                        <!--In acest mod ma folosesc de simbolurile specifice, prin intermediul tagului <i>-->
-
-                    </ul>
-                </div>
-
-                <!-- Centru -->
-                <div class="topcenter">
-                    <ul>
-                        <li><a href="/gitGaMa/index.html"><i class="fas fa-home"></i> Home</a></li>
-                      </ul>
-                </div>
-            </div>
-        </div>
-
-    <!-- De aici incepe header-ul -->
-    <div class="header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.php"><img src="/gitGaMa/images/download.png" width="80" alt=""></a>
-            </div>
-
-            <div class="headerright">
-                <ul>
-                            <li><a>You just logged out!</a></li>
-                            <li><a>You are not logged!</a></li>
-                    <li><a href="/gitGaMa/loginSIregister/login.html" class="signBtn"><i class="fas fa-user-circle"></i> Login</a></li>
-                    <li><a href="/gitGaMa/loginSIregister/register.html" class="registerBtn"><i class="fas fa-user-circle"></i> Register</a></li>
-                </ul>
-            </div>
-        </div>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>GaMa - Overview</title>
+    <link rel="stylesheet" href="css/scholarly.min.css">
+    <script src="js/scholarly.min.js"></script>
+  </head>
+  <body prefix="schema: http://schema.org">
+    <header>
+      <div class="banner">
+        <img src="scholarly-html.svg" width="227" height="50" alt="Scholarly HTML logo">
+        <div class="status">Community Draft</div>
+      </div>
+      <h1>GaMa</h1>
+    </header>
+    <!--
+      XXX
+      - check refs
+      - the math example has too much maths
+      - bring back some of the old style
+      - make semantics, validation, processing sub-sections of each structural element
+      - have a section before that for general constructs
+        - explain why use RDFa
+        - explain our patterns: RDFa, roles
+      - figure captions need to get set throughout
+      - dedication? see doc-dedication
+      - syntactic constraints (prefix)
+      - needs more sthenurines
+      - examples of everything
+      - some notes on using Semantic CSS
+      - needs more RDFa in the spec itself
+    -->
+    <div role="contentinfo">
+      <dl>
+        <dt>Authors</dt>
+        <dd>
+          Macrescu Cosmin-Ionut
+		  &amp;
+		  <s>Prodan Nicolae-Roger</s>
+        </dd>
+        <dd>
+          <a href="https://github.com/w3c/scholarly-html/issues">Issues and PRs welcome!</a>
+        </dd>
+        <dt>Discussion Group</dt>
+        <dd>
+          The <a href="https://www.w3.org/community/scholarlyhtml/">Scholarly HTML Community
+          Group</a> at <a href="https://w3.org/">W3C</a>
+          (<a href="https://lists.w3.org/Archives/Public/public-scholarlyhtml/">email archives</a>)
+        </dd>
+        <dt>License</dt>
+        <dd>
+          <a href="http://creativecommons.org/licenses/by/4.0/">CC-BY</a>
+        </dd>
+      </dl>
     </div>
+    <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+      <h2>Abstract</h2>
+      <p>
+        GaMa is a website that is desired for people all around the glob that wants to play different types of games, easy and fast without
+		any sophisticated steps and last but not least, the registered clients will be able to register in tournaments for specific games, and see informations
+    about their liked games from a library.
+      </p>
+    </section>
+    <section id="introduction" role="doc-introduction">
+      <!-- review? -->
+      <h2>Introduction</h2>
+      <p>
+		As we all know, these days, the video games are gainning more and more popularity. Back in the day, people had to go in certain places to play games,
+	      but now the technology has advanced and we can do that from our computer and that's why the GaMa website is useful!
+      </p>
+      <p>
+        The purpose of this website is to:
+      </p>
+      <ul>
+        <li>Make it easy to play diffrent games with people all around the glob by joining tourneys.</li>
+	<li>All games are for different ranges of ages!</li>
+        <li>Easy to choose the game.</li>
+        <li>Easy to use</li>
+	<li>See all of your tournaments in one place. </li>
+      </ul>
+    </section>
+    <section id="structure">
+      <!-- review? -->
+      <h2>Overview</h2>
+      <section id="Technologies">
+        <!-- review? -->
+        <h3>The <code>Technologies</code> used</h3>
+        <p>
+          The entire Web Application is powered by <b><code>PHP</code></b>.
+        </p>
+        <p>
+          <b><code>MySQL</code></b> will be used for the data storage.
+        </p>
+      </section>
+      <section id="Architecture">
+        <!-- review? -->
+        <h3>The <code>Architecture</code></h3>
+        <p>
+          Procedural architecture we will see if we will change it
+        </p>
+      </section>
+      <section id="Routes & End-points">
+        <h3>Below I present each page from the website and what it does</h3>
+        <p>
+          <b>INDEX page</b> is the page from where the user can log in or register. The user cannot
+          see the games until it loggs in.
+        </p>
 
+        <p>
+          <b>LOGIN page</b> is the page from where the user can log in.
+        </p>
 
-    <!-- Honorable games -->
-    <div class="honorableMentions">
-            <div class="container">
-                <!-- <h3 style="color:RED;">YOU HAVE TO BE LOGGED, IN ORDER TO JOIN</H3> -->
-                <h3>STRATEGY - BOARD GAMES</h3>
-                    <ul>
-                      <li><a href="/gitGaMa/gamesCategory/gameTourney.html"><img src="/gitGaMa/images/GoT.png" alt="GoT"></a></li>
-                      <li><a href="/gitGaMa/gamesCategory/gameTourney.html"><img src="/gitGaMa/images/gWho.png" alt="gWho"></a></li>
-                      <li><a href="/gitGaMa/gamesCategory/gameTourney.html"><img src="/gitGaMa/images/BoIboard.png" alt="BoI"></a></li>
-                      <li><a href="/gitGaMa/gamesCategory/gameTourney.html"><img src="/gitGaMa/images/monopoly.png" alt="mono"></a></li>
-                      <li><a href="/gitGaMa/gamesCategory/gameTourney.html"><img src="/gitGaMa/images/pandemic.png" alt="Pandemic"></a></li>
-                      <li><a href="/gitGaMa/gamesCategory/gameTourney.html"><img src="/gitGaMa/images/qCubes.png" alt="qCubes"></a></li>
-                      <li><a href="/gitGaMa/gamesCategory/gameTourney.html"><img src="/gitGaMa/images/domino.png" alt="domino"></a></li>
-                      <li><a href="/gitGaMa/gamesCategory/gameTourney.html"><img src="/gitGaMa/images/chessKid.png" alt="chessKid"></a></li>
+        <p>
+          <b>REGISTER page</b> is the page from where the user can log in.
+        </p>
 
-                    </ul>
-            </div>
-        </div>
+        <p>
+          <b>INDEX-AFTER-LOGIN page</b> is the page from where the user can see the top 4 popular games for his
+          age, he can get the RSS feed, and has a filter which is used to display games using ceratin criterias.
+          He can see the Board/Digital games by genre, or if it has a tourney.
+        </p>
 
-    <div class="honorableMentions">
-            <div class="container">
-                <h3>PUZZLE - DIGITAL</h3>
-                    <ul>
-                      <li><a href="/gitGaMa/gamesCategory/gameTourney.html"><img src="/gitGaMa/images/go.png" alt="go"></a></li>
-                      <li><a href="/gitGaMa/gamesCategory/gameTourney.html"><img src="/gitGaMa/images/labyrinth.png" alt="Labyrinth"></a></li>
-                      <li><a href="/gitGaMa/gamesCategory/gameTourney.html"><img src="/gitGaMa/images/Solitaire.png" alt="Solitaire"></a></li>
-                      <li><a href="/gitGaMa/gamesCategory/gameTourney.html"><img src="/gitGaMa/images/Hearthstone.png" alt="BoI"></a></li>
-                      <li><a href="/gitGaMa/gamesCategory/gameTourney.html"><img src="/gitGaMa/images/RedAlert2.png" alt="RedAlert2"></a></li>
-                    </ul>
-            </div>
-        </div>
+        <p>
+          <b>GAME-TOURNEY page</b> is the page of a game. Here, the <b>user</b> can see details of the game, he can like the game or dislike it
+          , he can also join a tourney if the game has it and if the tourney is not full. If the game has a tourney, the user will
+          be able to see other people that are joined and their points. Each tourney has 8 slots. He can also export as CSV the
+          details of the game.
+          <b>On this page, the admin has the rights to modify the number of players that are in the tourney and their points. He also has
+            a button called "Battle" which makes the tourney to go at the next step. When wwe have a winner, it will apper a "RESET" button,
+             which will reset the tourney and add a point in the database to the player that has won it.
+          </b>
+        </p>
+        
+        <p>
+          <b>MY-TOURNAMENTS</b> is the page for the users where they can see the games that they like and the ones on which
+          they are registered in the tourney.
+        </p>
+        
+        <p>
+          <b>ADMINISTRATION-PAGE</b> this page can only be accesed by the admin. Here are 3 tables, the ones from the database.
+          There are also 5 buttons: <b>MOVE PLAYE</b> it moves the player from a tourney to another. <b>DELETE USER</b> 
+          deletes the user from the database. <b>ADD GAME</b> adds a game to the website. <b>DELETE GAME</b> deletes a game from
+          the website. <b>MODIFY GAME</b> modifies the details of the game(genre, age limit, type, tourney, description, dimensions).
+        </p>
+      </section>
 
+      </section>
+      <section id="hunk">
+        <!-- review? -->
+        <h3>Diagrams</h3>
+        <p>
+          Below are a few diagrams to illustrate the use cases of the Web Application.
+        </p>
 
-    <!-- Zona partererilor/reclame -->
+        <section id="useCase">
+          <h3>Use Case Diagram</h3>
+          <a href="img/use_case_diagramGaMa.png"><img style="width: 100%;" src="img/use_case_diagramGaMa.png" alt="useCase diagram"/></a>
+        </section>
 
-    <div class="partnerArea">
-            <div class="container">
-              <h3>OUR PARTNERS</h3>
-                    <ul>
-                      <li><a href="https://www.info.uaic.ro/"><img src="/gitGaMa/images/FIIsponsor2.png" alt="FII"></a></li>
-                      <li><a href="https://www.bancatransilvania.ro"><img src="/gitGaMa//images/BTsponsor.jpg" alt="BT"></a></li>
-                      <li><a href="https://www.amazon.com"><img src="/gitGaMa/images/AmazonSponsor.png" alt="Amazon"></a></li>
-                    </ul>
-            </div>
-        </div>
+        <section id="UMLdiagram">
+          <h3>UML Diagram</h3>
+          <a href="img/UML_GaMa.png"><img style="width: 120%;" src="img/UML_GaMa.png" alt="UML diagram"/></a>
+        </section>
+      </section>
 
-    <!-- Footer-ul -->
+      <section id="whoDidWhat">
+        <h3>What we did:</h3>
+    <li><b>Macrescu Cosmin-Ionut</b>I did it all by my self.</li>
+    <li><b><s>Prodan Nicolae-Roger</s></b> <s>For interface: gameTourney.html (there is no bracket display at the moment, but it will be in the final implementation), administrationPage.html. Back-end: will do the login and logout parts, the tourneys brackets, the export to CSV of tourneys/stats function.</s></li>
+      </section>
 
-    <div class="footer">
-        <div class="container">
-            <div class="col-3">
-                <p><strong>Where you can find us:</strong><br>Iasi, Str. Ioanesei Adrian, Nr. 666</p>
-                <a href=""><img src="/gitGaMa/images/rss_icon.png" width="20" height="20" alt="RSS"></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="copyright">
-        <div class="container">
-            <h5>&copy; 2021 GaMa | Created by Macrescu Cosmin-Ionut & Prodan Nicolae-Roger</h5>
-            <p><a href="http://jigsaw.w3.org/css-validator/check/referer">
-                <img style="border:0;width:88px;height:31px"
-                src="http://jigsaw.w3.org/css-validator/images/vcss"
-                alt="Valid CSS!" />
-                </a>
-            </p>
-        </div>
-    </div>
-
-    </body>
+        <section id="conclusion">
+          <h3>Conclusion</h3>
+		<p>This website will be such a great "tool" for the people that like playing games online/offline and the competition and to explore a large gama of types of games.
+        </section>
+  </body>
 </html>
